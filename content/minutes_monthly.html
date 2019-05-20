@@ -1,0 +1,25 @@
+<perch:help>Editor: For help with formatting the large textarea using the Markdown editor, <a href="/format.php">consult this formatting help page</a>. And <a href="https://hackernoon.com/boost-your-productivity-using-markdown-b8a84fc2a089">here's another write-up about Markdown</a> if you want to learn more.  <br><br>Here we create a page on the website that contains a given month's minutes. This will assist screen readers and also make the information searchable.<br><br>If we don't want to create a page but do want to simply link to a pdf file of a given month's minutes, we do that at Pages -> Board Minutes Compiled -> Minutes by Month.<br><br>To create a link to this page on the website, do that at Pages -> Board Minutes Compiled -> Minutes by Month; open the options there and paste the URL in the designated box.<br>Obtain the correct URL at Pages -> choose the desired page -> Location where you can simply copy the path. The URL is also seen as the tail end of the page address that is at the top of the browser when viewing the page itself.</perch:help>
+
+<div>
+	<perch:if exists="minutes">
+ 		<p class="text_right">View the printable and <a href="<perch:content id="minutes" type="file" label=" " bucket="Minutes" divider-before="Editor: Select- or, if necessary, upload and then select- the official published version of the minutes into a link on the page." order="4"/>">official published version of these minutes.</a></p>
+ 	</perch:if>
+</div>
+<div>
+	<h1><perch:if exists="minutes_heading">
+			<perch:content id="minutes_heading" type="text" label="ENTER NOTHING and the default &quot;Willamette Towers HOA Board of Directors General Meeting&quot; will appear as the headline of the page; text entered here will supplant the default headline." order="1"/>
+			<perch:else />
+					Willamette Towers HOA Board of Directors General Meeting
+		</perch:if>
+	</h1>
+		<h2><perch:content id="minutes_subhead" type="textarea" label="Enter Subhead information- typical would be the date of the meeting. To add additional lines: spacebar spacebar return for a single line or double-return for a new paragraph." markdown="true" editor="markitup" size="xs" order="2" /></h2>
+			<div> 
+					<perch:content id="minutes_text" type="textarea" markdown="true" editor="markitup" divider-before="Editor: Create a Plain Text version of the official board minutes, then paste the contents into the textarea below and format the text in Markdown." label=" " html="true" order="3"/>
+			</div>
+
+
+
+
+
+
+
