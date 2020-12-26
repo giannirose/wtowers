@@ -1,0 +1,112 @@
+
+text/css stylesrev.css ( ASCII C program text )
+/* this stylesheet is included as a starting point with the Perch Quill Feather, the design was created by Laura Kalbag for Perch. 
+You are welcome to use this as is, or use it as a starting point when building your site.
+SECTIONS:
+
+1. Default styling - establishes the basic styles for elements on the site
+2. Section specific styling - for specific parts of the site
+3. Layout rules - these create the responsive layout
+*/
+
+/* *** 1. DEFAULT STYLING *** */
+/* copied to towers.css for styling
+form {
+    overflow: hidden;
+    padding-bottom: 1em;
+    text-align: left;
+}
+*/
+/*form div    {
+   width: 95%;
+   margin: 0 2.5% 0 2.5%;
+   padding-bottom: 1em;
+}*/
+
+form fieldset {
+    border: 1px solid #e2e2e2;
+    margin: 2em 0 1em 0;
+    padding: 1em;
+}
+form legend {
+    font-weight: bold;
+    margin-left: -1em;
+    padding: 0 1em;
+}
+/*
+form input[type=text],
+form input[type=email],
+form input[type=password],
+form input[type=search],
+form input[type=url],
+form textarea {
+    background: #fff;
+    background: -moz-linear-gradient(top, #f1f1f1 1%, #ffffff 25%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#f1f1f1), color-stop(25%,#ffffff), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top, #f1f1f1 1%, #ffffff 25%, #ffffff 100%);
+    background: -o-linear-gradient(top, #f1f1f1 1%,#ffffff 25%,#ffffff 100%);
+    background: -ms-linear-gradient(top, #f1f1f1 1%,#ffffff 25%,#ffffff 100%);
+    background: linear-gradient(top, #f1f1f1 1%,#ffffff 25%,#ffffff 100%);
+    border: 1px solid #dee0e0;
+    color: #000;
+    font-family: "Droid Sans", Arial, sans-serif;
+    line-height: 1.5em;
+    margin-bottom: .1em;
+    padding: 1em;
+    width: 95%;
+}
+*/
+form textarea {
+    background: #fff;
+    background: -moz-linear-gradient(top, #f1f1f1 1%, #ffffff 5%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#f1f1f1), color-stop(5%,#ffffff), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top, #f1f1f1 1%,#ffffff 5%,#ffffff 100%);
+    background: -o-linear-gradient(top, #f1f1f1 1%,#ffffff 5%,#ffffff 100%);
+    background: -ms-linear-gradient(top, #f1f1f1 1%,#ffffff 5%,#ffffff 100%);
+    background: linear-gradient(top, #f1f1f1 1%,#ffffff 5%,#ffffff 100%);
+}
+
+form textarea + em {
+    color: #717171;
+    display: block;
+    font-size: 92.85714%;
+    margin-top: -2em;
+    margin-bottom: -2em;
+}
+
+form ul li {
+    list-style-type: none;
+}
+
+
+form input[type=submit]:hover,
+form input[type=button]:hover,
+form button:hover,
+form input[type=submit]:active,
+form input[type=button]:active,
+form button:active {
+    background: #000;
+    border: 1px solid #000;
+}
+
+/* From Foundation styles.css this is changed to display:block rather than float: right;
+    .cols2-nav-right .sidebar {
+       float: right;
+        width: 18.75%; 180/960
+*/
+@media only screen and (min-width: 960px) {
+    .cols2-nav-right .sidebar {
+        display: block;
+    }
+}
+/* From Foundation styles.css to float right .primary-content
+    .cols2-nav-right .primary-content {
+       float:left;
+        width: 75%; /720/960
+    }
+*/
+@media only screen and (min-width: 960px) {
+.cols2-nav-right .primary-content {
+    display: block;
+    }
+}
