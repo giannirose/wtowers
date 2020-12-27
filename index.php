@@ -25,8 +25,6 @@
 		   			<?php perch_search_form(); ?>
 				</nav>
 					<?php
-						}else{
-							echo '<h1 class="hidethis">Hi! Where am I?</h1>';
 						}
 					?>
 
