@@ -11,73 +11,67 @@
 	</head>
 	
 <body>
-		<div class="page">
-
+	<div class="page">
 		<div>
 		    <?php 
-				$query = perch_get('q');  // 'q' query string argument e.g. search.php?q=apples
+			$query = perch_get('q');  // 'q' query string argument e.g. search.php?q=apples
 			    perch_content_search($query);
 			?>
 		</div>
-
 		 	<?php
 				if (perch_member_logged_in()) {
 			?>	
-
-		<nav class="sidebar searchbar menupage">
-		   <?php perch_search_form(); ?>
-
-					</nav>
-						<?php
-							}else{
-								echo '<h1 class="hidethis">Hi! Where am I?</h1>';
-							}
-						?>
+				<nav class="sidebar searchbar menupage">
+		   			<?php perch_search_form(); ?>
+				</nav>
+					<?php
+						}else{
+							echo '<h1 class="hidethis">Hi! Where am I?</h1>';
+						}
+					?>
 
 <header>	<!--this- <header>- is closed in header.html, perch content 'Heading'-->
    <div class="header"><!--div class="header" is closed in header.html perch content 'Heading'-->
-		<div class="headergroup">
-			<h1>Willamette Towers</h1>
-				<?php perch_content_custom('subheadings',[
-					'page' => '/reach.php',
-					'template' => '_home_subheading.html',
-					'sort' => 'subheading',
-					'sort-order' => 'RAND',
-					'count' => 1
+	<div class="headergroup">
+		<h1>Willamette Towers</h1>
+			<?php perch_content_custom('subheadings',[
+				'page' => '/reach.php',
+				'template' => '_home_subheading.html',
+				'sort' => 'subheading',
+				'sort-order' => 'RAND',
+				'count' => 1
 				]);
-				?>
-		</div>
-			<?php perch_content('Heading'); ?>
-			<?php perch_content('Emergency Alert'); ?>
-			<?php perch_content('Main Navigation Items'); ?>
-			<footer class="footer">
-					<?php perch_content('Home Page Footer'); ?>
-
-		 				<?php
-							if (perch_member_logged_in()) {
-						?>	
+			?>
+				</div>
+					<?php perch_content('Heading'); ?>
+					<?php perch_content('Emergency Alert'); ?>
+					<?php perch_content('Main Navigation Items'); ?>
+						<footer class="footer">
+							<?php perch_content('Home Page Footer'); ?>
+								<?php
+									if (perch_member_logged_in()) {
+								?>	
 					
-							<?php perch_content('Footer Logged In Info'); ?>
+									<?php perch_content('Footer Logged In Info'); ?>
 
-						<?php
-							}else{
-								echo '<h1 class="hidethis">Hi! Where am I?</h1>';
-							}
-						?>
+										<?php
+											}else{
+												echo '<h1 class="hidethis">Hi! Where am I?</h1>';
+												}
+										?>
 
-			</footer>
-
-				<div class="backtotop">
-					<a href="index.php">
-						<h1>Back to the top</h1>
-					</a>
-				</div><!--close class="backtotop"-->
-						<!--Begin footer. Do not use the global.footer region-->
-						<div class="subfooter">
-							<p class="black"><a href="members/index.php">Security Login</a>
-							</p>
-							<p><small><a href="mailto: john.rose3@comcast.net">Author: John Rose <?php echo date('Y'); ?></a></small></p>
-						</div>
+						</footer>
+							<div class="backtotop">
+								<a href="index.php">
+									<h1>Back to the top</h1>
+								</a>
+							</div><!--close class="backtotop"-->
+								<!--Begin footer. Do not use the global.footer region-->
+									<div class="subfooter">
+										<p class="black"><a href="members/index.php">Security Login</a>
+										</p>
+											<p><small><a href="mailto: john.rose3@comcast.net">Author: John Rose <?php echo date('Y'); ?></a></small></p>
+									</div>
 
 
 	</div>  <!-- end class="page" from header -->
@@ -94,7 +88,5 @@
 					</script>
 					<!--end Google Analytics script-->
 	   <?php PerchUtil::output_debug(); ?>
-
 </body>
 </html>
-<!--end footer-->
