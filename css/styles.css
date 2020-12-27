@@ -111,11 +111,6 @@ h1 {
     text-transform: uppercase;
 }
 
-::selection,
-::-moz-selection {
-    background: #fdfaa1;
-}
-
 blockquote {
     border-left: 2px solid;
 	  padding-left: 1.2em;
