@@ -3,7 +3,6 @@
 <div class="page_intro">
 	<?php perch_content('Contact Form Introduction'); ?>
 		<!--class="page_intro" is a simple textarea in the admin area-->
-		<!--the contact_wt.html form is in templates > forms-->
 	&nbsp;
 	&nbsp;
 </div>
