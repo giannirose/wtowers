@@ -1,0 +1,7 @@
+<perch:help>Editor: For help with formatting the large textarea using the Markdown editor, <a href="/format.php">consult this help page</a>.</perch:help> 
+<div> 
+  <perch:if exists="policy"> 
+    <p class="text_right">View the printable and <a href="<perch:content id="policy" type="file" label="Upload the pdf of the policy." bucket="Policies" divider-before="Editor: On this page, we link to the pdf file and enter the text in a text area and format it." order="1"/>">official published version of this policy.</a></p> 
+   </perch:if> 
+    <perch:content id="basic_policy" type="textarea" markdown="true" editor="markitup" divider-before="Editor: Create a Plain Text version of the individual policy, then pastethe contents into the textarea below and format the policy text." label="Enter the policy in plain text." order="2" /> 
+</div>
