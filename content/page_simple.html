@@ -1,0 +1,20 @@
+<perch:help>Editor: For help with formatting the large textarea using the Markdown editor, <a href="/format.php">consult this formatting help page</a>. <br><br>A simple page consists of a heading, subheading, and textarea. Additional textareas can be added.</perch:help>
+
+	<h1>
+		<perch:if exists="heading">
+			<perch:content id="heading" type="text" label="Heading"/>
+		</perch:if>
+	</h1>
+		<h2>
+			<perch:if exists="subheading">
+				<perch:content id="subheading" type="text" label="Subheading" />
+			</perch:if>
+		</h2>
+			<div>
+				<perch:content id="textarea" type="textarea" markdown="true" editor="markitup" label="Enter main content" html/>
+			</div>
+<perch:blocks>
+	<perch:block type="textblock" label="Add an additional text area">
+			<perch:content id="textblock" type="textarea" label="Add additional content" markdown="true" editor="markitup"  html help="Adding separate text areas may help organize a long document." />
+	</perch:block>
+</perch:blocks>
