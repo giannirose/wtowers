@@ -1,178 +1,178 @@
-<perch:help>Editor: This page posts the month and date of the board minutes as a clickable link.<br><br>One method is to simply link to an uploaded pdf version of the minutes.<br><br>An alternative method is to create a page and fill in the link address (URL) in the text block. Do one or the other, but not both.<br><br>Creating a page is done in admin at Pages > Minutes-Monthly > choose year > Add Subpage. Follow the instructions there.<br><br>To start an entirely new year, click the &quot;Save and Add another&quot; button at the end of this page.<br><br>Troubleshooting: If the month/year link appears twice on the page, it is because both the pdf link-to-file and the page URL have been entered. Eliminate one or the other- the typical choice would be to eliminate the pdf. </perch:help>
+<perch:help>Editor: On this page we post the board minutes.<br><br>Know where the file is on the computer. <br>Follow the "Select and Upload a File" directions and the pdf wil be available on the page.<br>Click the "Save" button. <br><br>There is the option to enter text that will appear in the given month, but this is rarely needed.<br><br>There is a &quot;Save and Add another&quot; button at the top and bottom of the page. Clicking either and saving will start a new year with the column of months laid out. The year can be filled in. <br><br>There is an alternative way to make a web page of the minutes. This is explained on <a href="/editing-instructions.php">the Editing Instructions page</a>. The advantage is that the text has the look of the website and is searchable.<br><br>Troubleshooting: If the month/year link appears twice on the page, it is because both the pdf link-to-file and the page URL have been entered. The typical solution is to delete the "Select or Upload a File" link. </perch:help>
 <table class="inlineblock">
-    <thead>
-        <tr>
-            <th><perch:content id="columnhead" type="text" label="This is the start of another year." help="Enter the year" title="true" /><br><p>Blank = not available</p></th>
+   <thead>
+      <tr>
+         <th><perch:content id="columnhead" type="text" label="This is the start of another year." help="Enter the year" title="true" /><br><p>Blank = not available</p></th>
         </tr> 
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                    <perch:if exists="jan_page">
-                    <a href="<perch:content id="jan_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." divider-before="January"  />" >January <perch:content type="text" id="columnhead" />
-                    </a>
-                    </perch:if>
+   </thead>
 
-                    <perch:if exists="jan_file">
-                    <a href="<perch:content id="jan_file" type="file" label="If you are linking to a pdf, upload and select the pdf or other file version of the minutes." bucket="Minutes" />">January <perch:content type="text" id="columnhead" /> 
-                    </a>
-                    </perch:if>                     
-                <perch:content id="no_file_01" type="text" label="If no file is available, enter info to appear on the page." /> 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <perch:if exists="feb_page">
-                    <a href="<perch:content id="feb_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here."  divider-before="February" />" >February <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                <perch:if exists="feb_file">
-                    <a href="<perch:content id="feb_file" type="file" label="If you are linking to a pdf, upload and select the pdf or other file version of the minutes." bucket="Minutes" />">
-                    </a>
-                </perch:if>
-                    <perch:content id="no_file_02" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." />             
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <perch:if exists="mar_page">
-                    <a href="<perch:content id="mar_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." divider-before="March" />" >March <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>                
-                <perch:if exists="mar_file">
-                    <a href="<perch:content id="mar_file" type="file" label="If you are linking to a pdf, upload and select the pdf or other file version of the minutes." bucket="Minutes" />" >March <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                    <perch:content id="no_file_03" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." /> 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <perch:if exists="apr_page">
-                    <a href="<perch:content id="apr_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." divider-before="April" />" >April <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                <perch:if exists="apr_file">
-                    <a href="<perch:content id="apr_file" type="file" label="If you are linking to a pdf, upload and select the pdf or other file version of the minutes." bucket="Minutes" />" >April <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>             
-                    <perch:content id="no_file_04" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." /> 
-            </td>
-        </tr>
-        <tr> 
-            <td>
-                <perch:if exists="may_page">
-                    <a href="<perch:content id="may_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." divider-before="May" />" >May <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>                
-                <perch:if exists="may_file">
-                    <a href="<perch:content id="may_file" type="file" label="If you are linking to a pdf, upload and select the pdf or other file version of the minutes." bucket="Minutes" />" >May <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                    <perch:content id="no_file_05" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." /> 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <perch:if exists="jun_page">
-                    <a href="<perch:content id="jun_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." divider-before="June" />" >June <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>                
-                <perch:if exists="jun_file">
-                    <a href="<perch:content id="jun_file" type="file" label="If you are linking to a pdf, upload and select the pdf or other file version of the minutes." bucket="Minutes" />" >June <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                    <perch:content id="no_file_06" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." /> 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <perch:if exists="jul_page">
-                    <a href="<perch:content id="jul_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." divider-before="July" />" >July <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>                
-                <perch:if exists="jul_file">
-                    <a href="<perch:content id="jul_file" type="file" label="If you are linking to a pdf, upload and select the pdf or other file version of the minutes." bucket="Minutes" />" >July <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                    <perch:content id="no_file_07" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." /> 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <perch:if exists="aug_page">
-                    <a href="<perch:content id="aug_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." divider-before="August" />" >August <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                <perch:if exists="aug_file">
-                    <a href="<perch:content id="aug_file" type="file" label="If you are linking to a pdf, upload and select the pdf or other file version of the minutes." bucket="Minutes" />" >August <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                    <perch:content id="no_file_08" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." /> 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <perch:if exists="sep_page">
-                    <a href="<perch:content id="sep_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." divider-before="September" />" >September <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>                
-                <perch:if exists="sep_file">
-                    <a href="<perch:content id="sep_file" type="file" label="If you are linking to a pdf, upload and select the pdf or other file version of the minutes." bucket="Minutes" />" >September <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                    <perch:content id="no_file_09" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." /> 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <perch:if exists="oct_page">
-                    <a href="<perch:content id="oct_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." divider-before="October" />" >October <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>                
-                <perch:if exists="oct_file">
-                    <a href="<perch:content id="oct_file" type="file" label="If you are linking to a pdf, upload and select the pdf or other file version of the minutes." bucket="Minutes" />" >October <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                    <perch:content id="no_file_10" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." /> 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <perch:if exists="nov_page">
-                    <a href="<perch:content id="nov_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." divider-before="November" />" >November <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                <perch:if exists="nov-file">
-                    <a href="<perch:content id="nov_file" type="file" label="If you are linking to a pdf, upload and select the pdf or other file version of the minutes." bucket="Minutes" />" >November <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                    <perch:content id="no_file_11" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." /> 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                 <perch:if exists="dec_page">
-                    <a href="<perch:content id="dec_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." divider-before="December" />" >December <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                <perch:if exists="dec_file">
-                    <a href="<perch:content id="dec_file" type="file" label="If you are linking to a pdf, upload and select the pdf or other file version of the minutes." bucket="Minutes" />" >December <perch:content type="text" id="columnhead" />
-                    </a>
-                </perch:if>
-                    <perch:content id="no_file_12" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." /> 
-            </td>
-        </tr>
+   <tbody>
+      <tr>
+         <td>
+            <perch:if exists="jan_file">
+               <a href="<perch:content id="jan_file" type="file" label="If you are linking to a pdf, click the select link. At Assets: Add the asset, then click use selected." bucket="Minutes" divider-before="January"  />">January <perch:content type="text" id="columnhead" /> 
+               </a>
+            </perch:if> 
+                    
+               <perch:content id="no_file_01" type="text" label="If no file is available, you can enter info here to appear on the page, or simply leave blank." />
 
-        <tr>
-            <td>
-                <perch:if exists="year_file">
-                    <a href="<perch:content id="year_file" type="file" label="FULL YEAR: Link to the compiled minutes for the year" bucket="Minutes" divider-before="FULL YEAR: Minutes for this year compiled"/>" >Full year bundle- printable <perch:content type="text" id="columnhead" /></a>
-                </perch:if>
-            </td>
-        </tr>
-
-    </tbody>
-    <tfoot>
-    </tfoot>
+                  <perch:if exists="jan_page">
+                    <a href="<perch:content id="jan_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here. See the Help notes a above." /> >January <perch:content type="text" id="columnhead" />
+                    </a>
+                  </perch:if>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <perch:if exists="feb_file">
+               <a href="<perch:content id="feb_file" type="file" label="f you are linking to a pdf, click the select link. At Assets: Add the asset, then click use selected." bucket="Minutes"  divider-before="February" />">
+               </a>
+            </perch:if>
+               <perch:content id="no_file_02" type="text" label="If no file is available, enter info to appear on the page, or simply leave blank" help="Example: Month/Year Not Available." /> 
+                  <perch:if exists="feb_page">
+                     <a href="<perch:content id="feb_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here. See the introductory help text above." />" >February <perch:content type="text" id="columnhead" />
+                     </a>
+                  </perch:if>           
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <perch:if exists="mar_file">
+               <a href="<perch:content id="mar_file" type="file" label="f you are linking to a pdf, click the select link. At Assets: Add the asset, then click use selected." bucket="Minutes" divider-before="March" />" >March <perch:content type="text" id="columnhead" />
+               </a>
+            </perch:if>
+               <perch:content id="no_file_03" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." />
+                  <perch:if exists="mar_page">
+                     <a href="<perch:content id="mar_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." />" >March <perch:content type="text" id="columnhead" />
+                     </a>
+                  </perch:if> 
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <perch:if exists="apr_file">
+               <a href="<perch:content id="apr_file" type="file" label="f you are linking to a pdf, click the select link. At Assets: Add the asset, then click use selected." bucket="Minutes" divider-before="April" />" >April <perch:content type="text" id="columnhead" />
+               </a>
+            </perch:if>             
+               <perch:content id="no_file_04" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." />
+                  <perch:if exists="apr_page">
+                     <a href="<perch:content id="apr_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." />" >April <perch:content type="text" id="columnhead" />
+                     </a>
+                  </perch:if> 
+         </td>
+      </tr>
+      <tr> 
+         <td>     
+            <perch:if exists="may_file">
+               <a href="<perch:content id="may_file" type="file" label="f you are linking to a pdf, click the select link. At Assets: Add the asset, then click use selected." bucket="Minutes" divider-before="May" />" >May <perch:content type="text" id="columnhead" />
+               </a>
+            </perch:if>
+               <perch:content id="no_file_05" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." />
+                  <perch:if exists="may_page">
+                     <a href="<perch:content id="may_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here."  />" >May <perch:content type="text" id="columnhead" />
+                    </a>
+                  </perch:if>  
+         </td>
+      </tr>
+      <tr>
+         <td>                
+            <perch:if exists="jun_file">
+               <a href="<perch:content id="jun_file" type="file" label="If you are linking to a pdf, click the select link. At Assets: Add the asset, then click use selected." bucket="Minutes" divider-before="June" />" >June <perch:content type="text" id="columnhead" />
+               </a>
+            </perch:if>
+               <perch:content id="no_file_06" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." />
+                  <perch:if exists="jun_page">
+                     <a href="<perch:content id="jun_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." />" >June <perch:content type="text" id="columnhead" />
+                     </a>
+                  </perch:if>                     
+         </td>
+      </tr>
+      <tr>
+         <td>               
+            <perch:if exists="jul_file">
+               <a href="<perch:content id="jul_file" type="file" label="f you are linking to a pdf, click the select link. At Assets: Add the asset, then click use selected." bucket="Minutes" divider-before="July" />" >July <perch:content type="text" id="columnhead" />
+               </a>
+            </perch:if>
+               <perch:content id="no_file_07" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." />
+                  <perch:if exists="jul_page">
+                     <a href="<perch:content id="jul_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." />" >July <perch:content type="text" id="columnhead" />
+                     </a>
+                  </perch:if>                      
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <perch:if exists="aug_file">
+               <a href="<perch:content id="aug_file" type="file" label="f you are linking to a pdf, click the select link. At Assets: Add the asset, then click use selected." bucket="Minutes" divider-before="August" />" >August <perch:content type="text" id="columnhead" />
+               </a>
+            </perch:if>
+               <perch:content id="no_file_08" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." />
+                  <perch:if exists="aug_page">
+                     <a href="<perch:content id="aug_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." />" >August <perch:content type="text" id="columnhead" />
+                     </a>
+                  </perch:if> 
+         </td>
+      </tr>
+      <tr>
+         <td>               
+            <perch:if exists="sep_file">
+               <a href="<perch:content id="sep_file" type="file" label="f you are linking to a pdf, click the select link. At Assets: Add the asset, then click use selected." bucket="Minutes" divider-before="September" />" >September <perch:content type="text" id="columnhead" />
+               </a>
+            </perch:if>
+               <perch:content id="no_file_09" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." />
+                  <perch:if exists="sep_page">
+                     <a href="<perch:content id="sep_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." />" >September <perch:content type="text" id="columnhead" />
+                     </a>
+                  </perch:if> 
+         </td>
+      </tr>
+      <tr>
+         <td>                
+            <perch:if exists="oct_file">
+               <a href="<perch:content id="oct_file" type="file" label="f you are linking to a pdf, click the select link. At Assets: Add the asset, then click use selected." bucket="Minutes" divider-before="October" />" >October <perch:content type="text" id="columnhead" />
+               </a>
+            </perch:if>
+               <perch:content id="no_file_10" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." />
+                  <perch:if exists="oct_page">
+                     <a href="<perch:content id="oct_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." />" >October <perch:content type="text" id="columnhead" />
+                     </a>
+                  </perch:if> 
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <perch:if exists="nov-file">
+               <a href="<perch:content id="nov_file" type="file" label="f you are linking to a pdf, click the select link. At Assets: Add the asset, then click use selected." bucket="Minutes" divider-before="November" />" >November <perch:content type="text" id="columnhead" />
+               </a>
+            </perch:if>
+               <perch:content id="no_file_11" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." />
+                  <perch:if exists="nov_page">
+                     <a href="<perch:content id="nov_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." />" >November <perch:content type="text" id="columnhead" />
+                     </a>
+                  </perch:if> 
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <perch:if exists="dec_file">
+               <a href="<perch:content id="dec_file" type="file" label="If you are linking to a pdf, click the select link. At Assets: Add the asset, then click use selected." bucket="Minutes" divider-before="December" />" >December <perch:content type="text" id="columnhead" />
+               </a>
+            </perch:if>
+               <perch:content id="no_file_12" type="text" label="If no file is available, enter info to appear on the page" help="Example: Month/Year Not Available." />
+                  <perch:if exists="dec_page">
+                     <a href="<perch:content id="dec_page" type="text" label="If you have created a page at Pages &gt; Minutes - Monthly, enter the URL here." />" >December <perch:content type="text" id="columnhead" />
+                     </a>
+                  </perch:if> 
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <perch:if exists="year_file">
+               <a href="<perch:content id="year_file" type="file" label="FULL YEAR: Link to the compiled minutes for the year" bucket="Minutes" divider-before="FULL YEAR: Minutes for this year compiled"/>" >Full year bundle- printable <perch:content type="text" id="columnhead" /></a>
+            </perch:if>
+         </td>
+      </tr>
+   </tbody>
+      <tfoot>
+      </tfoot>
 </table>
