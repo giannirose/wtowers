@@ -1,0 +1,46 @@
+<div class="block">	
+	<h3>Willamette Towers: Office Hours and Contact Information</h3>
+	<h4>Willamette Towers: After hours emergency contact:</h4>
+		<p class="info_block">
+			<span class="info_intro">Building Operations Manager: At entry call box, punch </span>  
+			<span class="info_detail"><perch:content id="bom_emergency" type="text" label="Enter the call box number to link to the building manager."  /></span>
+		</p>
+		<p class="info_block">
+			<span class="info_intro">Management Company: Call  </span>  
+			<span class="info_detail"><perch:content id="mgmt_emergency" type="text" label="Enter the number to link to the management company after-hours emergency message."  /> </span>
+			<span>and follow the message prompts.</span>
+		</p>
+	<br>
+	<br>	
+		<p>Willamette Towers<br>1313 Lincoln Street<br>Eugene, OR  97401</p>
+		<p class="info_block">
+			<span class="info_intro">Office Hours: </span> 
+			<span class="info_detail"><perch:content id="office_details" type="textarea" label="Enter Office Hours" help="Example: Monday, Wednesday and Friday: 8am - 12 noon" size="xs" /> </span>
+		</p>
+		<p class="info_block">
+			<span class="info_intro">Building Maintenance: </span> 
+			<span class="info_detail"><perch:content id="maintain_details" type="textarea" label="Enter Building Maintenance Hours" size="xs" help="Example: Monday - Friday: 11 am - 12:30 pm" /> 
+		</p>
+		<p class="info_block">
+			<span class="info_intro">Office email: </span>  
+			<span class="info_detail"><a href="mailto:<perch:content id="email_office" type="text" label="Enter Office email address" divider-before="Email Addresses" />" >
+			<perch:content id="email_office" type="text" label="Enter office email" />
+			</a></span> 
+		</p>
+		<perch:if exists="email_maintain">
+			<p class="info_block">
+				<span class="info_intro">Building Maintenance: </span> 
+				<span class="info_detail"><a href="mailto:<perch:content id="email_maintain" type="text" label="Enter Maintenance email address" help="If no email address is entered, this section will not appear on the page." />" ><perch:content id="email_maintain" type="text" label="Enter email address"  />
+				</a></span> 
+			</p>
+		</perch:if>
+
+		<p class="info_block">
+			<span class="info_intro">Office: </span>  
+			<span class="info_detail"><perch:content id="phone_office" type="text" label="Enter office phone number." divider-before="Phone numbers" /></span>
+		</p>
+		<p class="info_block"> 
+			<span class="info_intro">Fax: </span>
+			<span class="info_detail"><perch:content id="fax_office" type="text" label="Enter Fax number" /></span>
+		</p>
+</div>
