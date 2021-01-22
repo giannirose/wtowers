@@ -1,0 +1,37 @@
+	<perch:help>
+		Editor: For help with formatting the large textarea using the Markdown editor, <a href="/format.php">consult this formatting help page</a>.
+	</perch:help>	
+
+	<p><a href="contact.php">Use the Contact Form</a> to message all board members and building staff and to upload files and images.</p>
+<div class="block">	
+	<h3><strong>Willamette Towers Hours and Contact Information: </strong></h3>
+
+		<p class="info_block">Office Hours: 
+			<perch:content id="office_details" type="textarea" label="Enter Office Hours" help="Example: Monday, Wednesday and Friday: 8am - 12 noon" size="xs" /> 
+		</p>
+
+		<p class="info_block">Building Maintenance: 
+			<perch:content id="maintain_details" type="textarea" label="Enter Building Maintenance Hours" size="xs" help:"Example: Monday - Friday: 11 am - 12:30 pm" /> 
+		</p>
+
+		<p class="info_block">Office email:  
+			<a href="mailto:<perch:content id="office_email" type="text" label="Enter Office email address" />"><perch:content id="office_email" type="text" label="Add an email address" /></a> 
+		</p>
+
+		<perch:if exists="maintain_email">
+			<p class="info_block">Maintenance email: 
+				<a href="mailto:<perch:content id="maintain_email" type="text" label="Enter Maintenance email address" help="If no email address is entered, this section will not appear on the page." />" ><perch:content id="maintain_email" type="text" label="Enter email address" /></a> 
+			</p>
+		</perch:if>
+
+		<p class="info_block">Office Phone: 
+			<perch:content id="office_phone" type="text" label="Enter office phone number" />
+		</p>
+
+		<p class="info_block">Fax: 
+			<perch:content id="fax_phone" type="text" label="Enter Fax number" />
+		</p>			
+
+		<p class="info_block"><perch:content id="item_extra" type="text" label="Heading" help="Enter, for example, After Hours Emergency or other special information." divider-before=" The following section is for other contact information."/> 
+			<perch:content id="details_extra" type="textarea" size="xs" label="Details" />
+		</p>
