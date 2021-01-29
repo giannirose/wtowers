@@ -1,0 +1,34 @@
+<perch:help>
+		Editor: For help with formatting the large textarea using the Markdown editor, <a href="/format.php">consult this formatting help page</a>.<br><br />
+		Editor: This "News" region is for current news and announcements. There are three sections, each led by a light grey "Editor" box. The first section is to announce a meeting, the second is for general news items, and the third is to announce that there is no news. It may look complicated, but work through it and you will see how the the "editor" areas define the published page. There are more notes in the individual editor sections below.<br><br />
+		Editor: At the end of this page is a checkbox and textarea message box. If there is no news to report, skip to these, check the checkbox, and fill in a short message.
+</perch:help>
+
+<h3>Current News and Announcements</h3>
+
+<!--Begin meeting announcement area, used to announce a meeting, show dates and times, and, perhaps, post an agenda.-->
+	<perch:content type="checkbox" id="agendae" value="1" label="Check this box to make MEETING INFORMATION appear on the site." order="11" divider-before="Editor: The following editor area announces MEETING INFORMATION and, if you wish, to post an agenda or other type of file. To make this appear, check the box. Be certain that the 'no news at this time' checkbox at the end of the page is NOT checked." notes-before="Editor:  If you are NOT showing an upcoming meeting but wish to show other news, UNCHECK the box immediately below and proceed to the next \"editor\" (grey box) area where you can enter whatever information you wish." suppress="true"  />
+		<perch:if exists="agendae" divider-before="The following Meeting Announcement editor's area is designed to announce a meeting and to post an agenda or other type of file. To make this appear, check the box." >
+			<h1><perch:content id="meeting" type="text" label="Announce (Headline) the meeting being announced." order="12" /></h1>
+				<p>The <perch:content id="meeting"/> will take place <perch:content id="meetingInfo" type="text" label="Enter the place, day, date and time when the meeting will take place- Format example: in the office on Monday, January 20, 2020 at 4pm" order="14" />. 
+					<br>
+					<perch:content id="otherInfo" type="text" label="Add any additional meeting information in a full sentence." order="15" size="xl"/>
+				</p>
+					<perch:content type="checkbox" id="agenda_na" label="UNCHECKED= The link to the uploaded agenda or other file is shown on the page. CHECKED= The message in the box immediately below is shown, with no link to any file."  notes-before="Editor: This continues the \"announce a meeting\" editor area; specifically, it defines whether a \"no agenda available\" message or a link to an agenda is shown." suppress="true" order="16"/>
+						<perch:if exists="agenda_na">
+							<p><perch:content id="no_agenda" type="text" label="Make a short note if the agenda is NOT offered; example: The agenda is not available. " order="17"/></p>
+						<perch:else />
+ 							<p><a href="<perch:content id="agenda" type="file" label="Upload/Select the agenda for the upcoming meeting." order="18" bucket="agendae"/>" >The agenda</a> for the upcoming meeting.</p>
+ 						</perch:if>
+		</perch:if>
+<!--End Meeting Announcement area-->
+<!--Begin repeater area for posting general types of information-->
+		<perch:repeater id="addtimely" label="Enter news items here." divider-before="Editor: NEWS ITEMS area- If you have entered meeting information above, that will appear first, followed by the news items entered below. If there is no meeting information, the following will settle in at the top of the page. Note that you can \"Add Another\" textarea. Think of these as separate news items, and create as many different items as needed." notes-before="Editor: Notice the \"x\" at the top right corner of the textarea box. Click it to remove the entire textarea." order="21">
+			<h3><perch:content id="notice_intro" type="text" label="Headline here..."/></h3>
+				<perch:content id="timelytext" type="textarea" label="Enter information" markdown="true" editor="markitup" size="s"/><br>
+		</perch:repeater>		
+				</perch:if>
+<!--End Repeater area-->
+<!--The following section is used when there is no news-->
+	<perch:content id="add_notice" type="textarea" size="s" label="Enter informatin to appear on the site when there is no news. If there is other news, be sure to clear this." divider-before="Editor: Fill in this area if there is no news posted by the means above, but you still want some text or link to show when the News button is clicked. Note that there is a way to make the News button disappear at Pages - Homepage - Home Page Top Items" markdown="true" editor="markitup" order="42"/>
+<!--End the no news area-->
