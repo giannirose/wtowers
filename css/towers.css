@@ -1,5 +1,4 @@
-t
-
+text/css towers.css ( UTF-8 Unicode English text )
 /*# sourceMappingURL=towers.css.map */
 @charset "UTF-8";
 
@@ -824,8 +823,8 @@ section li  {
   font-size: 1.15em;
   }
 h1, h2, h3, h4  {
-  font-size: 1em;
-  line-height: 1.15em;
+  font-size: 1.5em;
+  line-height: 1.65em;
   }
 h2 p {
   font-size: 1em;
@@ -838,7 +837,7 @@ h2 p {
   font-size: 1.15em;
   }
 p   {
-  font-size: .85em;
+  font-size: 1em;
   }
 form label {
       font-size: .9em;
@@ -1694,6 +1693,52 @@ footer p  {
 .minutes ul li  {
     margin-left: 2rem;
     text-indent: -2rem;
+}
+
+.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file {
+    padding: 0 0 0 1rem;
+}
+
+.header-head   {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: 3.5em;
+    text-transform: capitalize;
+    letter-spacing: .05em;
+    color: #cccccc;
+    padding-top: .75em;
+    padding-bottom: .25em;
+    text-align: center;
+}
+
+.header-subhead   {
+    font-size: 2.15em;
+    line-height: 2.35rem;
+    color: #dddddd;
+    font-style: italic;
+    text-align: center;
+    padding-top: 1.25em;
+    padding-bottom: .5em;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-family: Times, "New Times Roman", serif;
+}
+
+.header-subhead a {
+  color: #dddddd;
+}
+
+.header-subhead a:hover {
+  color: #dddddd;
+  text-decoration: underline;
+}
+
+.underline-text   {
+  text-decoration: underline;
+}
+
+.redesigned-theme-2018 .wufoo .info {
+    margin-bottom: 2px;
 }
 
 /*# sourceMappingURL=towers.css.map */
