@@ -705,7 +705,7 @@ section a:link, a:visited  {
 
 .timelyalert {
   margin: 1em 0;
-  padding: 0 3em 1em 3em;
+  padding: 1em;
   border: double 6px #96160B;
   font-family: "Open Sans", sans-serif;
   text-align: center;
