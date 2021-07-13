@@ -139,8 +139,9 @@ figcaption {
     display: table-caption;
     caption-side: bottom;
     text-align: center;
-   font-style: italic;
-}​
+    font-style: italic;
+    background: #ddd;
+}
 
 figcaption cite:before  {
   content: none;
