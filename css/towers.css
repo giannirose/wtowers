@@ -295,7 +295,8 @@ figcaption {
     display: table-caption;
     caption-side: bottom;
     text-align: center;
-   font-style: italic;
+    font-style: italic;
+    background: #ddd;
 }​
 
 figcaption cite:before  {
@@ -1720,8 +1721,8 @@ th p  {
   margin: 0 1em 1em 0;
   border: double var(--dkgreenbkgrnd) 6px;
   border-style: double;
-border-width: 6px;
-border-color: #749088;
+  border-width: 6px;
+  border-color: #749088;
 }
 
 @media screen and (max-width: 640px)  {
