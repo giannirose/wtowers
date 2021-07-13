@@ -1,0 +1,34 @@
+<div class="addressbar">     
+   <ul class="infobar">
+      <li>1313 Lincoln Street</li><br>
+      <li>Eugene, Oregon</li><br>
+      <li class="phone_large"><a href="tel:541-344-5020">541 344 5020</a></li><br>        
+   </ul>
+</div>
+   <div class="topimg">
+<!--    <div class="topimg">  div containes the image-->
+      <figure class="figurewt"><!--the image itself with caption enclosed within the figure element-->
+ <!--*        <a href="<perch:content type="text" id="image_link" label="Add URL of image link" />" > *-->
+            <img class="imgwt" src="<perch:content id="imgwt" type="image" label="Typical image" title="true" bucket="images" />" 
+                  alt="<perch:content id="alt" type="text" label="Short Description of Image." help="A short description will be available to screen readers, aiding accessibility." divider-before="Editor: A simple description of the photo entered in the first box below will be read by screen readers, an aid to those with poor eyesight and an important aspect of making the site accessible to all. The &quot;Caption&quot; box below that is the Description" required="true" help="A short description will be available to screen readers, aiding accessibility." required="true"/>" />
+  <!--*          </a>      *-->         
+               <!--Begin caption and citation area-->
+                  <figcaption class="figure-caption">
+                     <p><perch:content id="figure_caption" type="text" label="Caption for the image" help="The caption appears as a line beneath the image." html="true"/></p>
+                        <cite>
+                           <p>
+                              <perch:content type="checkbox" id="copyrightsymbol" value="1" label="Check this box to display the &copy; symbol" suppress="true" checked="checked" />
+                                 <perch:if exists="copyrightsymbol">
+                                    <span class="copyright">&copy;</span>
+                                 </perch:if>
+                                    <perch:content id="imgwtcite" type="text" label="Artwork Citation or additional info&hellip;" help="Complete the copyright information if needed; otherwise, enter whatever information you would like." html="true"/>
+                           </p> 
+                        </cite>
+                  </figcaption>  
+                  <!--End Caption and Citation area-->
+         </figure><!--close the figure element-->
+<!--    	</div> close the div that contains the image (figure)-->
+      </div>
+	</div><!--End class header in home.php-->
+</header><!--End <header> in home.php-->
+<hr>
