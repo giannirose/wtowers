@@ -823,10 +823,6 @@ header h2   {
 section li  {
   font-size: 1.15em;
   }
-h1, h2, h3, h4  {
-  font-size: 1.5em;
-  line-height: 1.65em;
-  }
 h2 p {
   font-size: 1em;
   line-height: 1.15em;  
@@ -849,6 +845,10 @@ form label {
   header h2   {
     font-size: 1em;
     line-height: 1.35em;
+  }
+  h1, h2, h3, h4  {
+  font-size: 1.15em;
+  line-height: 1.5em;
   }
 }
 
