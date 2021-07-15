@@ -951,6 +951,13 @@ header {
     font-family: Times, "New Times Roman", serif;
 }
 
+@media screen and (max-width: 640px)  {
+  .header-subhead   {
+    font-size: 1.35em;
+    line-height: 1.75rem;
+  }
+}
+
 .header-subhead a {
   color: var(--medltgray);
   color: #dddddd;
