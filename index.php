@@ -30,8 +30,9 @@
 
 <header>	<!--this- <header>- is closed in header.html, perch content 'Heading'-->
    <div class="header"><!--div class="header" is closed in header.html perch content 'Heading'-->
-	<div class="headergroup">
+
 		<h1>Willamette Towers</h1>
+		<h2 class="header-subhead">
 			<?php perch_content_custom('subheadings',[
 				'page' => '/reach.php',
 				'template' => '_home_subheading.html',
@@ -40,6 +41,7 @@
 				'count' => 1
 				]);
 			?>
+		</h2>
 				</div>
 					<?php perch_content('Heading'); ?>
 					<?php perch_content('Emergency Alert'); ?>
