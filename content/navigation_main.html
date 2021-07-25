@@ -1,0 +1,34 @@
+<perch:before><nav></perch:before>
+<perch:if exists="group_head">
+<section>        
+    <h3 class="listhead"><perch:content id="group_head" type="text" label="Enter the title of the group" help="This is not a link, just a heading for a list of related items that are links." divider-before="Editor: This is the heading for a group of items. Each item grouped under the heading can be either a Page Link or a File Link. The heading entered will not itself be a link- it defines or explains the group of links that are grouped under the heading." markdown="true" editor="markitup" html="true" title="true" size="m" /></h3>             
+    <perch:blocks>
+        <perch:before><ul></perch:before>             
+        <perch:block type="list_file" label="Link to a file." >
+                <perch:content type="checkbox" id="file_link" value="1" label="Check to HIDE the button on the page- the item appears by default when not checked" suppress="true" checked ="checked" order="3"/>  
+        <perch:if not-exists="file_link">
+            <li>
+                <a href="<perch:content id="side_lead_link" type="file" label="Upload / Link to a file."  bucket="files" order="2"/>" >  
+                    <perch:content id="side_list_item" type="text" label="Enter the name of the file" help="Enter the name of the document (file) that this links to." html="true" order="1" />
+                </a>
+            </li>
+        </perch:if>
+        </perch:block>
+        <perch:block type="list_page" label="Link to a page."  >
+                <perch:content type="checkbox" id="page_link" value="1" label="Check to HIDE the button on the page- the item appears by default when not checked" divider-before="" suppress="true" checked ="checked" order="3"/>  
+        <perch:if not-exists="page_link">
+            <li>
+                <a href="<perch:content id="page_link_list" type="text" label="Enter the link." order="2" />" >  
+                    <perch:content id="side_page_item" type="text" label="Page Name&hellip;" title="true" html="true" order="1"/>
+                </a>
+            </li>
+        </perch:if>
+        </perch:block>
+        <perch:after></ul></perch:after>
+    </perch:blocks>
+</section>
+</perch:if>
+<perch:after></nav></perch:after>
+
+
+
