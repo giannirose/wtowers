@@ -11,7 +11,7 @@
 	</head>
 	
 <body>
-	<div class="page">
+	<div class="page wrapper">
 		<div>
 		    <?php 
 			$query = perch_get('q');  // 'q' query string argument e.g. search.php?q=apples
@@ -30,8 +30,9 @@
 
 <header>	<!--this- <header>- is closed in header.html, perch content 'Heading'-->
    <div class="header"><!--div class="header" is closed in header.html perch content 'Heading'-->
-	<div class="headergroup">
+
 		<h1>Willamette Towers</h1>
+		<h2 class="header-subhead">
 			<?php perch_content_custom('subheadings',[
 				'page' => '/reach.php',
 				'template' => '_home_subheading.html',
@@ -40,7 +41,8 @@
 				'count' => 1
 				]);
 			?>
-				</div>
+		</h2>
+
 					<?php perch_content('Heading'); ?>
 					<?php perch_content('Emergency Alert'); ?>
 					<?php perch_content('Main Navigation Items'); ?>
@@ -59,11 +61,6 @@
 										?>
 
 						</footer>
-							<div class="backtotop">
-								<a href="index.php">
-									<h1>Back to the top</h1>
-								</a>
-							</div><!--close class="backtotop"-->
 								<!--Begin footer. Do not use the global.footer region-->
 									<div class="subfooter">
 										<p class="black"><a href="members/index.php">Security Login</a>
