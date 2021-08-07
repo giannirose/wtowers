@@ -1259,18 +1259,27 @@ section a li {
   padding: .75rem; 
 }
 
+section a:hover {
+  color: var(--linkone);
+  text-decoration: underline;
+}
+
+section a:hover li  {
+    border: 7px solid var(--detailtwolt);
+}
+
 section h3  {
   font-family: var(--sansserifone);
   color: var(--colorlt-9);
   padding: .35em 1em .25em 1.5em;
   font-size: 1.25rem;
 }
-
+/*
 section a:hover {
   color: var(--linkone);
   text-decoration: underline;
 }
-
+*/
 @media screen and (min-width: 768px) {
   section a li   {
     margin: 2rem 1.5% 2rem 30%;
@@ -1289,10 +1298,6 @@ section a:hover {
 
 section a   {
   color: var(--colordk);
-}
-
-section a:hover li  {
-    border: 7px solid var(--detailtwolt);
 }
 
 section:nth-child(odd) {
