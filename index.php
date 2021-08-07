@@ -1,6 +1,6 @@
 <?php include('perch/runtime.php');?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset=utf-8>
 		<title>Willamette Towers</title>
