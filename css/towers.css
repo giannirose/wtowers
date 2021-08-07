@@ -3,17 +3,16 @@
 /* text/css towers.css ( UTF-8 Unicode English text ) */
 
 /*# sourceMappingURL=towers.css.map */
-@charset "UTF-8";
 
 address   {
   grid-column: 1;
   grid-row: 2;
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   font-style: italic;
   color: var(--colorlt);
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   address   {
   grid-row: 3;
   font-size: 1.65em;
@@ -110,7 +109,7 @@ body {
   padding: .5rem; 
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .border   {
     padding: 1rem 1.5rem;
   }
@@ -234,7 +233,7 @@ div.search {
   margin-left: .25rem;
 }
 
-@media screen and (min-width: 640px)  {
+@media screen and (min-width: 768px)  {
   .docs p   {
   margin-left: 2.15rem;
   }
@@ -270,7 +269,7 @@ figcaption {
   padding: .25rem 0;
   letter-spacing: .015em;
   background-color: var(--bkgrndone);
-}​
+}
 
 figcaption cite:before  {
   content: none;
@@ -288,7 +287,7 @@ figcaption cite p   {
   font-size: .8125rem;
 }
 
-@media screen and (min-width: 640px)  {
+@media screen and (min-width: 768px)  {
   figcaption p  {
     font-size: 1rem;
   }
@@ -302,7 +301,6 @@ figcaption cite p   {
 } 
 
 figure {
-    margin: 0 1rem 1rem auto;
     display: table;
     text-align: center;
 }
@@ -312,9 +310,7 @@ figure {
   display: inline-block;
 }
 */
-.heading figcaption {
-  padding: 0 1rem 0 1rem
-}
+
 /*
 .figcap_lft {
   float: left;
@@ -373,7 +369,7 @@ figure {
   grid-row: 2;
   }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
 .fill-in {
   grid-column: 2 / 3;
   grid-row: 1;
@@ -386,7 +382,6 @@ figure {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
-    flex-wrap: nowrap;
 }
 
 .flexlist ul {
@@ -398,7 +393,7 @@ figure {
     font-size: .8rem;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .flexlist   {
     flex-wrap: nowrap;
   }
@@ -419,7 +414,7 @@ footer  {
   grid-gap: 1.5rem;
 }
 
-@media screen and (min-width: 640px)  {
+@media screen and (min-width: 768px)  {
   footer  {
   grid-template-columns: repeat(4, 1fr);
   }
@@ -474,7 +469,7 @@ footer.layout-footer   {
     margin-bottom: .15rem;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .footer.panel p {
     font-size: 1rem;
   }  
@@ -528,7 +523,7 @@ form label {
 }
 
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
 form label {
       font-size: 1.15em;
   }
@@ -557,7 +552,7 @@ form .search label  {
   justify-self: center;
   }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
 .go {
   grid-column: 3 / 4;
   grid-row: 1;
@@ -601,7 +596,7 @@ form .search label  {
   margin: 0 auto .25rem auto;
  }
 
- @media screen and (min-width: 640px)     {
+ @media screen and (min-width: 768px)     {
   .grouplink a {
     font-size: 1.5rem;
     padding: 1.5rem 2.5rem 1rem 2.5rem;
@@ -677,7 +672,7 @@ h6 {
 }
 
 
-@media screen and (min-width: 640px) { 
+@media screen and (min-width: 768px) { 
   h1 {
     font-size: 2.25rem;
     }
@@ -709,7 +704,7 @@ header {
   padding: 1rem 1rem 1.2rem 1rem;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   header  {
     padding-bottom: 2rem;
   }
@@ -721,24 +716,26 @@ header {
 header h1 {
 grid-column: 1 / 2;
 grid-row: 1;
-font-size: 2rem;
+font-size: 1.5rem;
 color: var(--colorlt);
 letter-spacing: .2rem;
 }
 
 header h2 {
-  font-size: 1rem;
+  font-size: .85rem;
   color: var(--colorlt);
   display: none;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   header h1 {
     font-size: 3.5rem;
+    color: var(--colorlt);
   }
   header h2   {
     font-size: 2.15rem;
-    display: block;  
+    display: block; 
+    color: var(--colorlt); 
     grid-column: 1 / 2;
     grid-row: 2;
   }
@@ -805,10 +802,14 @@ header:before {
   font-style: normal;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
 .headerbar li   {
   font-size: 1.75rem;
   }
+}
+
+.heading figcaption {
+  padding: 0 1rem 0 1rem
 }
 
 .helpful li {
@@ -842,7 +843,7 @@ img   {
   margin-left: 20%; 
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
 .infobar li   {
   font-size: 1.65em;
   }
@@ -906,9 +907,9 @@ label.desc, legend.desc {
   justify-self: center;
   text-align: center;
   align-self: center;
-  }
+}
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
 .label  {
   grid-column: 1 / 2;
   grid-row: 1;
@@ -930,7 +931,7 @@ li {
   list-style-position: inside;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width:768px) {
   li  {
     font-size: 1.25rem;
   }
@@ -999,8 +1000,8 @@ div ul .list_txt_center p:first-child {
 
 nav ul  {
   margin-left: 0;
+  margin-top: 1.5rem;
   padding-bottom: .5rem;
-  padding-right: 1rem;
 }
 
 nav.searchbar  {
@@ -1018,7 +1019,6 @@ ol ul li {
 
 ol ol li {
   font-size: 1rem; 
-
 }
 
 ol li {
@@ -1033,7 +1033,7 @@ p {
   text-align: left;
 }
 
-@media screen and (min-width: 640px) {  
+@media screen and (min-width: 768px) {  
 p   {
   font-size: 1.35rem;
   }
@@ -1050,8 +1050,15 @@ p.textindent   {
 
 .page {
   margin: 0 auto;
-  max-width: 960px;
-  line-height: 1.5; 
+  width: 100%;
+  line-height: 1.25; 
+}
+
+@media screen and (min-width: 768px)  {
+  .page   {
+    line-height: 1.5;
+    width: 90%;
+  }
 }
 
 .page_intro a h2:hover {
@@ -1123,7 +1130,7 @@ p.textindent   {
     margin-bottom: 2px;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
 .reduce   {
   font-size: 1.75em;
   }
@@ -1183,7 +1190,7 @@ p.textindent   {
 
 .searchresults a:hover   {
   color: var(--offblack);
-  text-deccoration: underline;
+  text-decoration: underline;
 }
 
 .searchresults p  {
@@ -1204,7 +1211,7 @@ p.textindent   {
   grid-row: 3;
   }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
 .searchtext   {
   grid-column: 1 / 4;
   grid-row: 2;
@@ -1239,32 +1246,24 @@ section p {
   padding: .65rem 1rem 0 1rem; 
 }
 
-@media screen and (min-width: 640px) {  
-  section a li  {
-    font-size: 1.5rem;
-    padding: .5rem;
-    border: 10px solid var(--detailbright);
-  }
-  section a:hover li  {
-    border: 10px solid var(--detailtwolt);
-  }
-}
-
 section a li {
   font-style: normal;
   margin: 1rem 1.5% 1rem 10%;
   border-radius: 5rem;
   background-color: var(--bkgrndlight);
   text-align: center;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   max-width: 83.5%;
   list-style-type: none;
   border: 7px solid var(--detailbright);
   padding: .75rem; 
 }
 
-section a   {
-  color: var(--colordk);
+section h3  {
+  font-family: var(--sansserifone);
+  color: var(--colorlt-9);
+  padding: .35em 1em .25em 1.5em;
+  font-size: 1.25rem;
 }
 
 section a:hover {
@@ -1272,27 +1271,28 @@ section a:hover {
   text-decoration: underline;
 }
 
-section a:hover li  {
-    border: 7px solid var(--detailtwolt);
-}
-
-
-section h3  {
-  font-family: var(--sansserifone);
-  color: var(--colorlt-9);
-  padding: .35em 1em .25em 1.5em;
-}
-
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   section a li   {
     margin: 2rem 1.5% 2rem 30%;
     max-width: 63.5%;
     font-size: 2.25rem;
+    padding: 1rem;
+    border: 10px solid var(--detailbright);
   }
-
   section h3  {
     font-size: 2.15rem;
   }
+  section a:hover li  {
+    border: 10px solid var(--detailtwolt);
+  }
+}
+
+section a   {
+  color: var(--colordk);
+}
+
+section a:hover li  {
+    border: 7px solid var(--detailtwolt);
 }
 
 section:nth-child(odd) {
@@ -1334,7 +1334,6 @@ section:nth-child(even) {
 .subfooter small a  {
   text-align: center;
   color: #c2f0e4;
-  text-align: center;
 }
 
 .subfooter small a:hover  {
@@ -1478,7 +1477,7 @@ td:first-child {
 }
 
 td:nth-child(3) {
-  border-right: 1px solid #var(--bkgrndtwo); 
+  border-right: 1px solid var(--bkgrndtwo); 
 }
 
 td a {
@@ -1546,7 +1545,7 @@ th p  {
   display: none;
 }
 
-@media screen and (min-width: 640px)  {
+@media screen and (min-width: 768px)  {
   .topimg   {
     grid-row: 1 / 4;
   }
@@ -1621,10 +1620,9 @@ ul.social-links li  {
 
 .wrapper  {
   margin: 0 auto;
-  max-width: 960px;
   color: var(--colordk);
   font-family: "Open Sans", Verdana, sans-serif;
-  line-height: 1.5;
+  width: 90%;
 }
 
 .wufoo input.text, .wufoo textarea.textarea, .wufoo input.file {
