@@ -1,0 +1,59 @@
+:root {
+  --white: hsl(360, 100%, 100%);
+  --offwhite: hsl(0%, 0%, 98%);
+  --black: hsl(0, 0%, 0%);
+  --offblack: hsl(120, 100%, 5%);
+  --red: hsl(0, 100%, 50%);
+  --medltgray: hsl(0, 0%, 87%);
+  --ltltgray: hsl(240, 7%, 95%);
+
+  --dkgreenbkgrnd: hsl(163, 11%, 51%);
+  --ltgreenbkgrnd: hsl(164, 61%, 85%);
+  --dpredbrown: hsl(5, 88%, 22%);
+  --brtredbrown: hsl(0, 68%, 42%);
+
+
+
+  --detailbright: hsl(164, 61%, 85%);
+  --detailtwolt: hsl(28, 100%, 92%);
+  --detailtwolt-xtra: hsl(28, 100%, 98%);
+  --detailtwodk: hsl(28, 100%, 30%);
+
+  --linkdk: var(--detailtwodk);
+  --linklt: var(--detailtwolt);
+  --link-hover-dk: hsl(28, 100%, 30%);
+  --link-hover-lt: hsl(164, 61%, 85%);
+  /* linkhoverlt was   color: hsla(164, 61%, 85%, 1) */
+
+  --linkone: hsl(0, 68%, 42%);
+/* light and dark background */
+  --bkgrnd-h: 208;
+  /* background one */
+  --bkgrndone-hsl: var(--bkgrnd-h), 95%, 20%;
+  --bkgrndone: hsl(var(--bkgrndone-hsl));
+  /* background light */
+  --bkgrndlight-hsl: var(--bkgrnd-h), 100%, 97%;
+  --bkgrndlight: hsl(var(--bkgrndlight-hsl));
+  /* background two */
+  --bkgrndtwo-h: calc(var(--bkgrnd-h) - 20);
+  --bkgrndtwo-hsl: var(--bkgrndtwo-h), 100%, 20%;
+  --bkgrndtwo: hsl(var(--bkgrndtwo-hsl));
+
+  /* main text color hue */
+  --color-h: 208;
+ 
+  /* main text color light */
+  --colorlt-s: 100%;
+  --colorlt-l: 97%;
+  --colorlt-hsl: var(--color-h), var(--colorlt-s), var(--colorlt-l);
+  --colorlt: hsl(var(--colorlt-hsl));
+  /* Light color with transparency */
+  --colorlt-9: hsla(var(--colorlt-hsl), .9);
+  --colorlt-xtra: hsl(var(--color-h), var(--colorlt-s), 99%);
+ 
+  /* main text color dark */
+  --colordk-s: 95%;
+  --colordk-l: 20%;
+  --colordk-hsl: var(--color-h), var(--colordk-s, var(--colordk-s);
+  --colordk: hsl(var(--colordk-hsl));
+}
