@@ -1,0 +1,19 @@
+<div class="addressbar border">		
+	<perch:before><ul class="infobar"></perch:before>
+		<perch:help>You may want to add the fax number in "Other." We wouldn't want to include the email address because we want folks to use the "Contact" button for email correspondence.
+		</perch:help>
+			<li><perch:content id="street" type="text" label="Street" order="1"/></li>
+			<li><perch:content id="city_state_zip" type="text" label="City, State and Zip" order="2"/></li>
+			<li class="phone_large"><perch:content id="phone" type="text" label="Phone" order="3"/></li>
+					
+	<perch:content type="checkbox" id="new_line" value="1" label="Check to add a line break and to enter the data for a new line" divider-before="Editor: Check the box to make the new line appear, and make sure to un-check the box to make the new line and the line break disappear." suppress="true" />	
+		<perch:if exists="new_line">
+			<br>
+				<li><perch:content id="begin_line" type="text" label="Fill in the first part of line 2" divider-before="The following could be a second line in the address bar, intended to list Office Hours, so the first box might well be filled in just like that:\"Office Hours\", with a list of hours to follow. Notice that the second box offers the opportunity to 'add another.' This would be used if hours are different on different days and you want to list days separately. Being too wordy with this will wrap in the address bar and it might not look so good, so be succinct!" /></li>
+			<perch:repeater id="repeat_list_item"	label="This will add additional items to the list" notes-before="This was intended to list office hours; maybe you'll neeed onbly one text box, but you may well need a few.">
+				<li><perch:content id="list_item" type="text' label="Enter, for example, the office hours, either all in this text box, or text boxes can be added to permit various ways of entering the hours./></li>
+			</perch:repeater>
+		</perch:if>
+	<perch:after></ul></perch:after>
+</div>
+		
