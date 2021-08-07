@@ -1,0 +1,16 @@
+<perch:help>Editor: For help with formatting the large textarea using the Markdown editor, <a href="/format.php">consult this formatting help page</a>. </perch:help>
+<div class="grouplink"><!--begin grouplink-->
+	<perch:content id="grouplink" type="textarea" markdown="true" editor="markitup" bucket="files" />
+	<div><!--begin unordered list repeater-->
+		<perch:repeater id="grouplinks" label="Grouped Pages">
+    	<perch:before><ul></perch:before>
+            <a href="<perch:content id="page_link_list" type="text" label="Enter the page or link linked to." order="2" />" > 
+                <li>
+                    <perch:content id="side_page_item" type="text" label="Page Name&hellip;" order="1" /> 
+                </li>
+            </a>
+    	<perch:after></ul></perch:after>
+		</perch:repeater>
+	</div> <!--close unordered list repeater-->
+</div><!--end group link list-->
+
