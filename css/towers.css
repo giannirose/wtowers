@@ -1007,6 +1007,7 @@ nav ul  {
 nav.searchbar  {
   background: #0a0a0a;
   padding: 1.2rem;
+  display: none;
 }
 
 .newsletter {
