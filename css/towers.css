@@ -671,6 +671,14 @@ h5 {
   padding: .5rem 0 .5rem 0; 
 }
 
+.minutes h5 {
+    font-size: 1.25rem;
+    text-align: left;
+    color: var(--detailtwodk);
+    padding: .5rem 0 0 2rem;
+    margin-bottom: .5rem;
+}
+
 h6 {
   font-size: 1.35em;
   text-align: center;
@@ -841,8 +849,19 @@ html {
 }
 
 img   {   
-  max-width: 100%;
-  height: auto; 
+  max-width: 100%; 
+}
+
+.imgwt  {
+  width: 150px;
+  height: 224px;
+}
+
+@media screen and (min-width: 768px) {
+.imgwt   {
+  width: 404px;
+  height: 608px;
+  }
 }
 
 /*The following are styles for the image within a section*/
@@ -1038,7 +1057,8 @@ ol li {
 p {
   font-family: var(--sansserifone);
   font-size: 1.15rem;
-  padding: .5rem 5% 0 5%;
+  padding: 0 5% 0 5%;
+  margin-top: .5rem;
   text-align: left;
 }
 
