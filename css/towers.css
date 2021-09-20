@@ -869,7 +869,7 @@ img   {
 @media screen and (min-width: 768px) {
 .imgwt   {
   width: 404px;
-  height: 608px;
+  height: auto;
   }
 }
 
