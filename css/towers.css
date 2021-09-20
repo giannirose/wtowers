@@ -687,6 +687,15 @@ h6 {
   padding: .5em 0 .5em 0; 
 }
 
+.minutes h6   {
+    font-size: 1.35em;
+    text-align: left;
+    font-style: italic;
+    color: var(--bkgrndtwo);
+    padding: .5em 0 0 2.75rem;
+    margin-bottom: .5rem;
+}
+
 
 @media screen and (min-width: 768px) { 
   h1 {
@@ -1769,6 +1778,14 @@ input[type="submit"], button {
 
 #wuf-adv  {
   visibility: hidden;
+}
+
+.wufoo h2 {
+    font-family: serif;
+    color: red;
+    font-size: 3rem;
+    font-style: italic;
+    padding: 0;
 }
 
 /*# sourceMappingURL=towers.css.map */
