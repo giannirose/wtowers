@@ -1730,6 +1730,10 @@ form textarea {
     border-radius: 5px;
 }
 
+.searchbar form input   {
+  color: var(--medltgray);
+}
+
 form textarea + em {
     color: #717171;
     display: block;
