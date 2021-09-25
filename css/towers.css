@@ -269,6 +269,10 @@ em {
   font-style: italic; 
 }
 
+em.keyword  {
+  color: red;
+}
+
 /*from jr website all caption types*/
 figcaption {
   display: table-caption;
