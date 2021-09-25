@@ -845,11 +845,11 @@ header:before {
 hgroup {
   color: var(--colorlt); 
 }
-/*
+
 .hidethis   {
   display: none;
 }
-*/
+
 .highlight {
   color: var(--detailtwodk); 
 }
