@@ -1140,6 +1140,7 @@ p.textindent   {
 
 .primary-content  {
   padding: 0;
+  line-height: 1.5;
 }
 
 .primary-content form input:hover  {
