@@ -1238,10 +1238,10 @@ p.textindent   {
 }
 
 .searchresults .keyword   {
-  color: var(--offwhite);
-  background: var(--dpredbrown);
+  color: var(--red);
   padding-left: .5rem;
   padding-right: .5rem;
+  font-size: 1.5rem;
 }
 
 .searchtext   {
