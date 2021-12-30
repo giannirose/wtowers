@@ -132,13 +132,6 @@ You could also have each section as a separate stylesheet, it is up to you. */
 
 /*Screen width above 320px. Mobile phones. */
 @media only screen and (min-width: 320px) {
-    .main-nav {
-        border-bottom: 1px solid #e2e2e2;
-        overflow: hidden;
-        padding: 0;
-    }
-    
-
     
     .layout-footer ul.social-links {
         overflow: hidden;
