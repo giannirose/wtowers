@@ -93,51 +93,6 @@ form textarea + em {
 form ul li {
     list-style-type: none;
 }
-/*
-form input[type=submit]:hover,
-form input[type=button]:hover,
-form button:hover,
-form input[type=submit]:active,
-form input[type=button]:active,
-form button:active {
-    background: #000;
-    border: 1px solid #000;
-}
-*/
-
-/* *** MAIN-NAV *** */
-.main-nav {
-    border-top: 1px solid #e2e2e2;
-    margin-bottom: 40px;
-}
-
-.main-nav li {
-    list-style-type: none;
-}
-
-.main-nav li a {
-    color: #555;
-    display: block;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding: .8em 1.6em;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.main-nav li.selected a {
-    color: #fff;
-    background-color: #000;
-}
-
-.main-nav li a:hover {
-    color: #000;
-}
-
-.main-nav ul li.selected a {
-    background: #000;
-    color: #fff;
-}
 
 /* *** SUB NAV *** */
 .sidebar ul{
@@ -183,20 +138,7 @@ You could also have each section as a separate stylesheet, it is up to you. */
         padding: 0;
     }
     
-    .main-nav ul {
-        overflow: hidden;
-        padding: 5px 20px;
-    }
-    
-    .main-nav li {
-        float: left;
-    }
-    
-    .main-nav li a {
-        float: left;
-        margin: .5em 0;
-        padding: .5em 1.5em;
-    }
+
     
     .layout-footer ul.social-links {
         overflow: hidden;
