@@ -1,8 +1,3 @@
-/* Begin transfered files from github 2021_07_10 */
-
-/* text/css towers.css ( UTF-8 Unicode English text ) */
-
-/*# sourceMappingURL=towers.css.map */
 
 address   {
   grid-column: 1;
@@ -10,12 +5,13 @@ address   {
   font-size: 1.15rem;
   font-style: italic;
   color: var(--colorlt);
+  margin: auto 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   address   {
   grid-row: 3;
-  font-size: 1.65em;
+  font-size: 1.35em;
   }
 }
 
@@ -270,7 +266,7 @@ em {
 }
 
 em.keyword  {
-  color: red;
+  color: var(--red);
 }
 
 /*from jr website all caption types*/
@@ -292,7 +288,6 @@ figcaption p  {
   font-size: .85rem;
   color: var(--colorlt);
   font-style: italic;
-  padding: .25rem;
 }
 
 figcaption cite p   {
@@ -723,7 +718,6 @@ header {
   text-align: center;
   width: 100%;
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
 }
 
 .header   {
@@ -734,10 +728,7 @@ header {
   padding: 1rem 1rem 1.2rem 1rem;
 }
 
-@media screen and (min-width: 768px) {
-  header  {
-    padding-bottom: 2rem;
-  }
+@media screen and (min-width: 640px) {
   .header   {
     padding: 1rem 1rem 1rem 1rem;
   }
@@ -749,6 +740,7 @@ grid-row: 1;
 font-size: 1.5rem;
 color: var(--colorlt);
 letter-spacing: .2rem;
+margin: auto 0;
 }
 
 header h2 {
@@ -757,17 +749,18 @@ header h2 {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   header h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--colorlt);
   }
   header h2   {
-    font-size: 2.15rem;
+    font-size: 1.85rem;
     display: block; 
     color: var(--colorlt); 
     grid-column: 1 / 2;
     grid-row: 2;
+    margin: auto 0;
   }
 }
 
@@ -832,9 +825,10 @@ header:before {
   font-style: normal;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
 .headerbar li   {
   font-size: 1.75rem;
+  margin: 3rem 0;
   }
 }
 
@@ -869,11 +863,12 @@ img   {
 .imgwt  {
   width: 150px;
   height: 224px;
+  border: 2px solid #ccc;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
 .imgwt   {
-  width: 404px;
+  width: 200px;
   height: auto;
   }
 }
@@ -884,7 +879,7 @@ img   {
   margin-left: 20%; 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
 .infobar li   {
   font-size: 1.65em;
   }
@@ -1034,15 +1029,14 @@ div ul .list_txt_center p:first-child {
   border: 1px solid #749088; 
 }
 
+.main-nav {
+    border-top: 1px solid #e2e2e2;
+    margin-bottom: 40px;
+}
+
 .minutes ul li  {
     margin-left: 2rem;
     text-indent: -2rem;
-}
-
-nav ul  {
-  margin-left: 0;
-  margin-top: 1.5rem;
-  padding-bottom: .5rem;
 }
 
 nav.searchbar  {
@@ -1201,6 +1195,7 @@ p.textindent   {
   background: #ddd;
   border: 1px solid #333;
   border-radius: 10px;
+  color: var(--medltgray);
 }
 
 .searchbar form div.label  {
@@ -1242,10 +1237,10 @@ p.textindent   {
 }
 
 .searchresults .keyword   {
-  color: var(--red);
-  padding-left: .5rem;
-  padding-right: .5rem;
-  font-size: 1.5rem;
+  color: var(--white);
+  padding-left: .8rem;
+  padding-right: .8rem;
+  background-color: var(--red);
 }
 
 .searchtext   {
@@ -1280,67 +1275,52 @@ p.textindent   {
   color: #ddd;
 }
 
+section h3  {
+    font-size: 1.65rem;
+   }
+
+section li {
+  font-style: normal;
+  margin: 1rem 1.5% 1rem 10%;
+  border-radius: 5rem;
+  background-color: var(--bkgrndlight);
+  text-align: center;
+  font-size: 1.35rem;
+  max-width: 83.5%;
+  list-style-type: none;
+  padding: 0;
+}
+
+section li a:hover {
+  color: var(--linkone);
+  text-decoration: underline;
+  border: 10px solid var(--detailtwolt);
+}
+
+@media screen and (min-width: 640px) {
+  section li   {
+    margin: 1.75rem 0;
+    font-size: 1.35rem;
+    padding: 0;
+    font-style: normal;
+    max-width: 100%;
+  } 
+}
+
+section a   {
+  color: var(--brtredbrown);
+}
+
 section {
-  padding: .5rem 0; 
+  padding-top: 1rem;
+  padding-bottom: 1.25rem; 
 }
 
 section p {
   padding: .65rem 1rem 0 1rem; 
 }
 
-section a li {
-  font-style: normal;
-  margin: 1rem 1.5% 1rem 10%;
-  border-radius: 5rem;
-  background-color: var(--bkgrndlight);
-  text-align: center;
-  font-size: 1.15rem;
-  max-width: 83.5%;
-  list-style-type: none;
-  border: 7px solid var(--detailbright);
-  padding: .75rem; 
-}
-
-section a:hover {
-  color: var(--linkone);
-  text-decoration: underline;
-}
-
-section a:hover li  {
-    border: 7px solid var(--detailtwolt);
-}
-
-section h3  {
-  font-family: var(--sansserifone);
-  color: var(--colorlt-9);
-  padding: .35em 1em .25em 1.5em;
-  font-size: 1.25rem;
-}
-/*
-section a:hover {
-  color: var(--linkone);
-  text-decoration: underline;
-}
-*/
-@media screen and (min-width: 768px) {
-  section a li   {
-    margin: 2rem 1.5% 2rem 30%;
-    max-width: 63.5%;
-    font-size: 2.25rem;
-    padding: 1rem;
-    border: 10px solid var(--detailbright);
-  }
-  section h3  {
-    font-size: 2.15rem;
-  }
-  section a:hover li  {
-    border: 10px solid var(--detailtwolt);
-  }
-}
-
-section a   {
-  color: var(--colordk);
-}
+@media screen and (min-width: 640px) {
 
 section:nth-child(odd) {
   background-color: var(--bkgrndone);
@@ -1403,6 +1383,14 @@ text-decoration: underline;
 
 .subfooter p a:hover  {
   text-decoration: underline;
+}
+
+.subitem a {
+  border: 10px solid var(--detailbright);
+  border-radius: 5rem;
+  background-color: var(--bkgrndlight);
+  padding: 1rem;
+  display: block;
 }
 
 .success {
@@ -1592,7 +1580,7 @@ th p  {
   display: none;
 }
 
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 640px)  {
   .topimg   {
     grid-row: 1 / 4;
   }
@@ -1600,6 +1588,7 @@ th p  {
     color: var(--colorlt);
     font-style: italic;
     display: block;
+    margin-top: 0;
   }
   .topimg a:hover   {
     text-decoration: underline;
@@ -1782,7 +1771,16 @@ input[type="submit"], button {
     cursor: pointer;
     -webkit-appearance: none;
 }
+
 /*End Quill feather form examples*/
+
+ #form1_search input  {
+  color: red;
+}
+
+ #form2_search input  {
+  color: red;
+}
 
 #wuf-adv  {
   visibility: hidden;
@@ -1797,3 +1795,4 @@ input[type="submit"], button {
 }
 
 /*# sourceMappingURL=towers.css.map */
+
