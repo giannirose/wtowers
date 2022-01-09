@@ -1570,6 +1570,10 @@ th p  {
   background: -ms-linear-gradient(top, #f1f1f1 1%, #ffffff 25%, #ffffff 100%);
   background: linear-gradient(top, #f1f1f1 1%, #ffffff 25%, #ffffff 100%); 
 }
+  
+  .timelyalert a {
+  text-decoration: underline;
+}
 
 .topimg   {
   grid-column: 2 / 3;
